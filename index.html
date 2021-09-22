@@ -40,11 +40,12 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container container-fluid">
-            <a class="navbar-brand" href="#"><img src="new_internshala_logo.svg" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar-brand" href="#"><img src="new_internshala_logo.svg" alt=""></a>
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <br>
@@ -87,14 +88,21 @@
                                 <a class="dropdown-item" href="#"> Specialization</a>
                             </div>
                         </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">WHF Internships</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Fresher Jobs</a>
                         </li>
-                        <li class="mb-3">
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <hr class="d-lg-none d-block">
+                        <li class="mb-3 d-lg-block d-none">
                             <button class="btn border-primary text-primary" type="button" data-toggle="modal"
                                 data-target="#exampleModal">Login</button>
                         </li>
-                        <li class="nav-item dropdown ml-0 ml-lg-3">
+                        <li class="nav-item dropdown ml-0 ml-lg-3 d-lg-block d-none">
                             <a class="nav-link dropdown-toggle btn btn-primary text-white" href="#" id="navbarDropdown"
                                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Register
@@ -104,11 +112,33 @@
                                 <a class="dropdown-item" href="#">As an employer</a>
                             </div>
                         </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">Register - As a student</a>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">Register - As an employee</a>
+                        </li>
+                        <li class="nav-item d-lg-none d-block">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav float-right">
+
                     </ul>
                 </span>
             </div>
+            <li class="nav-item dropdown ml-0 ml-lg-3 d-lg-none d-block">
+                <a class="nav-link dropdown-toggle btn btn-primary text-white" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Register
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">As a student</a>
+                    <a class="dropdown-item" href="#">As an employer</a>
+                </div>
+            </li>
         </div>
-    </nav> -->
+    </nav>
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -124,16 +154,19 @@
                     <form>
                         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                             <li class="nav-item">
-                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Student</a>
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Student</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Employee/T&P</a>
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Employee/T&P</a>
                             </li>
-                          </ul>
-                          <div class="tab-content" id="myTabContent">
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                 <div class="my-4">
-                                    <button class="btn btn-light btn-block"><i class="fa fa-google"></i> Login With Google</button>
+                                    <button class="btn btn-light btn-block"><i class="fa fa-google"></i> Login With
+                                        Google</button>
                                 </div>
                                 <div class="row">
                                     <div class="col-5">
@@ -183,7 +216,7 @@
                                     New to Internshala? Register (<a href="">Student</a> / <a href="">Company</a> )
                                 </p>
                             </div>
-                          </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -239,27 +272,33 @@
     <div class="container my-5 items">
         <div class="row">
             <div class="container d-flex justify-content-between">
-                <div>
-                    <h2>Internships</h2>
+                <div class="d-none d-md-block">
+                    <h3>Internships</h3>
                     <p class="lead">Apply to 10,000+ internships for free</p>
                 </div>
                 <div>
-                    <a href="" class="text-decoration-none"><strong>View all internships <i
-                                class="fa fa-arrow-right"></i> </strong></a>
+                    <a href="" class="text-decoration-none d-none d-md-block">View all internships<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="container my-4 d-flex justify-content-center d-block d-md-none">
+                <div>
+                    <h3 class="text-center">Internships</h3>
+                    <p class="lead text-center">Apply to 10,000+ internships for free</p>
                 </div>
             </div>
         </div>
 
+
         <div class="row my-4">
             <div class="container">
                 <div class="row mb-4">
-                    <h4 class="ml-3">Popular Cities</h4>
+                    <h5 class="ml-3">Popular Cities</h5>
                 </div>
                 <div class="row flex-row flex-nowrap scrollx">
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="work_from_home.svg" class="figure-img img-fluid hoverable" alt="">
                                         <h6 class="text-center">Work from home</h6>
@@ -267,7 +306,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="delhi_ncr.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Delhi/NCR</h6>
@@ -275,7 +314,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="bangalore.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Bangalore</h6>
@@ -283,7 +322,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="mumbai.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Mumbai</h6>
@@ -295,7 +334,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="hyderabad.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Hyderabad</h6>
@@ -303,7 +342,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="chennai.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Chennai</h6>
@@ -311,7 +350,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="kolkata.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Kolkata</h6>
@@ -319,7 +358,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="international.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">International</h6>
@@ -341,7 +380,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="part_time.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Part-time</h6>
@@ -349,7 +388,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="engineering.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Engineering</h6>
@@ -357,7 +396,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="ngo.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">NGO</h6>
@@ -365,7 +404,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="mba.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">MBA</h6>
@@ -377,7 +416,7 @@
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="design.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">design</h6>
@@ -385,7 +424,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="science.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Science</h6>
@@ -393,7 +432,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="media.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Media</h6>
@@ -401,7 +440,7 @@
                                 </figure>
                             </div>
                             <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
+                                <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
                                     <a href="" class="text-dark text-decoration-none">
                                         <img src="humanities.svg" class="figure-img img-fluid" alt="">
                                         <h6 class="text-center">Humanities</h6>
@@ -413,98 +452,124 @@
                 </div>
             </div>
         </div>
+        <p class="text-center">
+            <a href="" class="text-decoration-none d-block d-md-none">View all internships <i
+                    class="fa fa-arrow-right"></i></a>
+        </p>
     </div>
 
 
     <div class="container my-5 items">
         <div class="row">
             <div class="container d-flex justify-content-between">
-                <div>
-                    <h2>Internshala Trainings</h2>
+                <div class="d-none d-md-block">
+                    <h3>Internshala Trainings</h3>
                     <p class="lead">Learn new-age skills on the go</p>
                 </div>
                 <div>
-                    <a href="" class="text-decoration-none"><strong>View all tarinings <i class="fa fa-arrow-right"></i>
-                        </strong></a>
+                    <a href="" class="text-decoration-none d-none d-md-block">View all tarinings <i class="fa fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="row my-4">
-            <div class="container">
-                <div class="row flex-row flex-nowrap scrollx">
-                    <div class="col-md-6">
-                        <div class="row ">
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="programming_with_python.svg" class="figure-img img-fluid hoverable"
-                                            alt="">
-                                        <h6 class="text-center">Programming with python</h6>
-                                    </a>
-                                </figure>
+        <div class="container my-4 d-flex justify-content-center">
+            <div class="d-block d-md-none">
+                <h3 class="text-center">Internshala Trainings</h3>
+                <p class="lead text-center">Learn new-age skills on the go</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-xl-6">
+                    <div class="row ">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="programming_with_python.svg"
+                                                class="figure-img img-fluid hoverable" alt="">
+                                            <h6 class="text-center">Programming with python</h6>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="digital_marketing.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Digital Marketing</h6>
+                                        </a>
+                                    </figure>
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="digital_marketing.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Digital Marketing</h6>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="web_development.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Web Development</h6>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="machine_learning.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Machine Learning</h6>
-                                    </a>
-                                </figure>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="web_development.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Web Development</h6>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="machine_learning.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Machine Learning</h6>
+                                        </a>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="advanced_excel.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Advanced Excel</h6>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="ethical_hacking.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Ethical Hacking</h6>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="autocad.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Autocad</h6>
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="col-3">
-                                <figure class="figure bg-image hover-overlay hover-zoom hover-shadow ripple">
-                                    <a href="" class="text-dark text-decoration-none">
-                                        <img src="creative_writing.svg" class="figure-img img-fluid" alt="">
-                                        <h6 class="text-center">Creative Writing</h6>
-                                    </a>
-                                </figure>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="advanced_excel.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Advanced Excel</h6>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="ethical_hacking.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Ethical Hacking</h6>
+                                        </a>
+                                    </figure>
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="autocad.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Autocad</h6>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center">
+                                    <figure class="figure  hover-overlay hover-zoom hover-shadow ripple">
+                                        <a href="" class="text-dark text-decoration-none">
+                                            <img src="creative_writing.svg" class="figure-img img-fluid" alt="">
+                                            <h6 class="text-center">Creative Writing</h6>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -514,6 +579,10 @@
                 <p class="text-center">& 52 more...</p>
             </div>
         </div>
+        <p class="text-center">
+            <a href="" class="text-decoration-none d-block d-md-none">View all trainings <i
+                    class="fa fa-arrow-right"></i></a>
+        </p>
     </div>
 
 
@@ -521,37 +590,47 @@
     <div class="container my-5">
         <div class="row">
             <div class="container d-flex justify-content-between">
-                <div>
-                    <h2>Fresher Jobs <span class="badge orange text-white">NEW</span></h2>
+                <div class="d-none d-md-block">
+                    <h3>Fresher Jobs <span class="badge orange text-white">NEW</span></h3>
                     <p class="lead">Premium fresher jobs on your fingertips</p>
                 </div>
                 <div>
-                    <a href="" class="text-decoration-none"><strong>View all jobs <i class="fa fa-arrow-right"></i>
-                        </strong></a>
+                    <a href="" class="text-decoration-none d-none d-md-block">View all jobs <i class="fa fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="row my-4 flex-row flex-nowrap scrollx">
-            <div class="col d-flex justify-content-center">
+        <div class="container my-4 d-flex justify-content-center">
+            <div class="d-block d-md-none">
+                <h3 class="text-center">Fresher Jobs <span class="badge orange text-white">NEW</span></h3>
+                <p class="lead text-center">Premium fresher jobs on your fingertips</p>
+            </div>
+        </div>
+
+        <div class="row my-4">
+            <div class="col-md-4 d-flex justify-content-center">
                 <figure class="figure">
                     <img src="ctc.svg" class="figure-img img-fluid" alt="">
                     <h6 class="text-center">Minimum CTC of 3 LPA</h6>
                 </figure>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
                 <figure class="figure">
                     <img src="dream.svg" class="figure-img img-fluid" alt="">
                     <h6 class="text-center">Dream Companies</h6>
                 </figure>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div class="col-md-4 d-flex justify-content-center">
                 <figure class="figure">
                     <img src="verified.svg" class="figure-img img-fluid" alt="">
                     <h6 class="text-center">100% verified jobs</h6>
                 </figure>
             </div>
         </div>
+        <p class="text-center">
+            <a href="" class="text-decoration-none d-block d-md-none">View all jobs <i class="fa fa-arrow-right"></i></a>
+        </p>
     </div>
 
 
@@ -559,7 +638,7 @@
     <footer class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 mt-5">
+                <div class="col-md-3 mt-5 d-none d-md-block">
                     <div class="footer-list text-white">
                         <h5 class="mb-4">Internships by places</h5>
                         <div class="footer-list-item">
@@ -591,7 +670,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3  my-5">
+                <div class="col-md-3 my-5 d-none d-md-block">
                     <div class="footer-list text-white">
                         <h5 class="mb-4">Internships by Stream</h5>
                         <div class="footer-list-item">
@@ -655,6 +734,7 @@
                         </div>
                     </div>
                 </div>
+                <hr class="d-block d-md-none border-white">
                 <div class="col-md-3 my-5">
                     <div class="footer-list text-white">
                         <h5 class="mb-4">About Internshala</h5>
